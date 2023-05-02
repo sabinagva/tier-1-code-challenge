@@ -45,7 +45,6 @@ myScrabbleTiles.pop()
 */
 myScrabbleTiles.push({tile:'F', score: 4});
 
-
 // 6. Complete this function. It needs to be given an array of tile objects. The function will use a for-loop and return the sum of all the scores in the given array.
 sum = 0;
 function sumTiles(anArray) {
