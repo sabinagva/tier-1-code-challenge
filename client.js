@@ -24,7 +24,7 @@ let myScrabbleTiles = [];
   { tile: 'D', score: 2 }
   { tile: 'A', score: 1 }
 */
-
+//we dont need to define object to push it through array (noob mistake :()
 myScrabbleTiles.push({tile:'N', score: 1});
 myScrabbleTiles.push({ tile: 'K', score: 5 });
 myScrabbleTiles.push({ tile: 'Z', score: 10 });
@@ -47,7 +47,11 @@ myScrabbleTiles.push({tile:'F', score: 4});
 
 // 6. Complete this function. It needs to be given an array of tile objects. The function will use a for-loop and return the sum of all the scores in the given array.
 sum = 0;
+//had to define sum so we could add score
 function sumTiles(anArray) {
+  //had to make tile a variable so we could
+  //pull the score out of the array with help of tile
+  //'AnArray is in for loop bc we can pass myscrabbletiles through it'
   for(let tile of anArray) {
     sum += tile.score;
     // console.log(tile)
